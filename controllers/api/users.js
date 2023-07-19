@@ -38,7 +38,19 @@ async function login(req, res) {
 module.exports = {
     create,
     login,
-    checkToken
+    checkToken,
+    getUserDetails
+}
+
+async function getUserDetails(req, res){
+  try{
+    console.log(req.params)
+    const user = await User.findOne({_id: req.params.id})
+    console.log(user)
+    res.json(user)
+  } catch(error) {
+    console.log('Error Getting User Details', error)
+  }
 }
 
 function checkToken(req, res) {

@@ -26,6 +26,10 @@ app.use(require('./config/checkToken'))
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'))
 
+const ensureLoggedIn = require('./config/ensureLoggedIn');
+
+app.use('/api/toys', require('./routes/api/toys'));
+app.use('/api/geocode', require('./routes/api/geocode'));
 
 
 // The following "catch all" route (note the *) is necessary

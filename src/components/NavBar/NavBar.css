@@ -1,0 +1,17 @@
+.rm-line {
+    text-decoration: none;
+    color: white;
+    border-color: white;
+    border-radius: 30px;
+}
+
+.rm-line:hover {
+    color: rgb(100, 91, 89); 
+  }
+
+.welcome {
+    color: rgb(100, 91, 89);
+    font-weight: 800; 
+}
+
+  

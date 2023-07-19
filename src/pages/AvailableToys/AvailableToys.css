@@ -1,0 +1,27 @@
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.colbtn,
+.delbtn {
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+    border-color: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+.colbtn:hover {
+    color: rgb(100, 91, 89);
+}
+
+.delbtn {
+    background-color: rgb(100, 91, 89);
+}
+
+.delbtn:hover {
+    color: red;
+}
+
